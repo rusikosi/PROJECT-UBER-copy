@@ -3,123 +3,102 @@
   padding: 0;
 }
 
-html, body, .root {
-  min-height: 100%;
-}
-
 body {
   font-family: 'Uber Move Text', sans-serif;                                             
 }
 
-main {
-  display:block;
+.app {
+  display: block;
 }
+/*-----------------------------*/
 
-/*---------------------------------*/
-
-nav {
+.nav-bar {
   display: flex;
-  margin: 0 auto;
+  align-items: center;
+  background-color: #000;
+  height: 9vh;
   width: 100%;
-  padding: 12px 0px;
-  background-color:  #000;
-  height: 64px;
-  box-sizing: border-box;
-  font-size: 16px;
 }
+
 .nav-bar__logo {
   display: flex;
-  flex-basis: auto;
-  list-style: none;
-  flex-grow: 0;
-  flex-shrink: 0;
-  justify-content: flex-start;
-  margin: 0;
+  margin: 15px;
+  font-size: 25px;
   
 }
-.nav-bar__logo li a {
-  display: list-item;
+.nav-bar__logo a {
+  text-align: center;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 24px;
-  height: 100%;
+  color: #fff;
 }
 
-.nav-bar__support {
-  display: flex;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
-  justify-content: flex-start;
-  list-style: none;
-}
-.nav-bar__support li a {
-  display: list-item;
+.nav-bar a {
+  text-align: center;
   text-decoration: none;
-  padding-inline-start: 40px;  
-  color: white;
-  align-items:center;
+  color: #fff;
+  cursor: pointer;
+}
+.nav__button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.nav-bar li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 13px;
   border: 1px solid #000;
+  transition: background-color 0.5s;
   border-radius: 25px;
-  margin: 0 5px;
-  padding: 8px 12px;
-  background-color:#000;
-  transition: filter 0.5s ease;
+  padding: 8px 10px;
 }
-.nav-bar__support a:hover {
-  filter: brightness(0.4);
+.nav-bar li:hover {
+  background-color:rgba(94, 94, 94, 0.588);
 }
 
 
-.nav-bar__usermenu {
-  display: flex;
-  flex-grow: 0;
-  flex-shrink: 0;
+.nav-bar__left {
+  flex: 1;
+  justify-content: flex-start;
+}
+.nav-bar__right {
+  flex: 1;
   justify-content: flex-end;
-  flex-basis: auto;
-  list-style: none;
-  transform: translateX(14px);
-}
-.nav-bar__usermenu li {
-  margin-right: 5px;
-}
-.nav-bar__usermenu li a {
-  display: list-item;
-  text-decoration: none;
-  padding-inline-start: 40px;
 }
 
 
-/*----------wrapper---------------*/
 
-.wrapper {
-  display: block;
+
+
+
+
+
+/*
+.nav-bar__left{
   display: flex;
-  background-image: url(/img/DotCom_Update_Earner_bg_sml2x.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 600px;
-  position: relative;
- 
+  flex: 1;
 }
-.wrapper-block {
-  display: block;
-  position: absolute;
-  background-color: white;
-  flex-basis: 50%;
-  justify-content:center ;
-  align-items: center;
-  width: 30%;
-  height: 30%;
-  margin-top: 70px;
-  margin-left: 200px;
-  flex-wrap: wrap;
-}
-.wrapper-block__nav {
+.nav-bar-list__left {
   display: flex;
 }
-.wrapper-block__nav ul{
+.nav-bar-list__left li {
+  display: inline-block;
+  margin: 10px;
+}
+
+
+.nav-bar__right {
   display: flex;
-  justify-content: space-around;
+  margin: 15px;
+  flex: 1;
+  justify-content: flex-end;
+}
+.nav-bar-list__right {
+  display: flex;
+  margin: 15px;
+}
+.nav-bar-list__right li {
+  display: inline-block;
+  margin: 10px;
 }
