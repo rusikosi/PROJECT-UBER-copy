@@ -11,6 +11,10 @@ body {
 .app {
   display: block;
 }
+p {
+  font-weight: 400;
+  font-size: 15px;
+}
 /*-----------------------------*/
 
 .nav-bar {
@@ -24,7 +28,7 @@ body {
 }
 
 .nav-bar__logo {
-  margin: 15px;
+  margin: 1em;
   font-size: 25px;
   
 }
@@ -134,6 +138,8 @@ body {
   justify-content: center;
   flex-wrap: nowrap;
   width: 50%;
+  max-width: 32em;
+  min-width: 32em;
   height: auto;
   margin: 5em auto 5em 0;
   background-color: #fff;
@@ -146,10 +152,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  flex-grow: 0;
   list-style: none;
-  padding: 1em;
-  
 }
 .driver-nav li {
   display: flex;
@@ -170,6 +173,8 @@ cursor: pointer;
   text-decoration: none;
   cursor: pointer;
   color: #000;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .driver__body {
@@ -179,7 +184,7 @@ cursor: pointer;
 }
 .driver__body h1 {
   font-size: 2.8em;
-  margin: 1em 0 0.8em 0;
+  margin: 1em 0 0.5em 0;
 }
 .driver__body p {
   font-size: 14px;
@@ -206,8 +211,9 @@ cursor: pointer;
   text-decoration: none;
   color: #000;
   border-bottom: 0.7px solid rgba(168, 167, 167, 0.504);
-  margin-right: 25%;
-  padding-bottom: 1em;
+  width:fit-content;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 /*---------------FOCUSED------------------*/
 .focused {
@@ -218,15 +224,38 @@ cursor: pointer;
 }
 .focused-container {
   display: flex;
-  align-items: center;
   justify-content: start;
   flex-wrap: nowrap;
   flex-basis: 100%;
-  gap: 10px;
+  gap: 30px;
+}
+.focused h1 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+.focused h3 {
+  margin: 1em 0;
+  font-weight: 500;
+}
+.focused p {
+  margin-bottom: 2em;
+  font-size: 14px;
+}
+.focused a {
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  width:fit-content;
+  padding-bottom: 0.5em;
+  border-bottom: 0.7px solid rgba(168, 167, 167, 0.504);
+  cursor: pointer;
 }
 .focused-block__item {
+  display: flex;
+  flex-direction: column;
   flex-basis: 50%;
-  
 }
 .focused-block__item img {
   width: 100%;
@@ -276,8 +305,8 @@ cursor: pointer;
 }
 .newsroom-container {
   display: flex;
-  align-items: center;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-basis: 100%;
   gap: 10px;
@@ -287,26 +316,29 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2em;
-  margin: 1em;
+
 }
 .newsroom-block__item img {
-  width: 2em;
-  margin:20px 0;
+  width: 1.5em;
+  margin: 1em 0;
 }
 .newsroom-block__item h3 {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 1em;
+  font-weight: 500;
 }
 .newsroom-block__item p {
   margin-bottom: 2em;
+ 
 }
 .newsroom-block__item a {
   text-decoration: none;
   color: #000;
   margin-bottom: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   border-bottom: 0.7px solid rgba(168, 167, 167, 0.504);
+  width:fit-content;
+  font-size: 14px;
 }
 
 
