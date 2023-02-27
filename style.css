@@ -42,11 +42,11 @@ body {
 }
 .nav__button {
   padding: 10px 15px;
-  margin: auto;
   border-radius: 20px;
   border: 1px solid #fff;
   cursor: pointer;
   justify-content: flex-start;
+  text-align: left;
 }
 .nav-bar li {
   
@@ -114,10 +114,92 @@ body {
 /*-------------------------------------------*/
 
 
+.driver {
+  background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_820,h_461/v1653688498/assets/2c/3833ca-a2eb-4da4-9879-51193ea88f87/original/DotCom_Update_Earner_bg_med2x.jpg);
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+.block-driver {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 30em;
+  margin: 5em auto 5em 5em;
+  background-color: #fff;
+}
+.driver__header {
+  border-bottom: 0.7px solid rgba(230, 223, 223, 0.608);
+}
+.driver-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  list-style: none;
+  margin-bottom: 1em;
+  
+}
+.driver-nav li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.8em auto;
+  font-size: 14px;
+  flex-basis: 33.3%;
+}
+.driver-nav img {
+width: 1.8em;
+height: auto;
+margin: 0.8em auto;
+cursor: pointer;
+}
+.driver-nav li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
 
+.driver__body {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8em 3em;
+}
+.driver__body h1 {
+  font-size: 2.8em;
+  margin: 1em 0 0.8em 0;
+}
+.driver__body p {
+  font-size: 14px;
+  margin-bottom: 2em;
+}
+.driver__body button {
+  margin: 0 auto 0 0;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  font-weight: 550;
+  cursor: pointer;
+}
 
-
-
+.driver__footer {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 3em;
+}
+.driver__footer a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 0.5px solid rgba(230, 223, 223, 0.608);
+  margin-right: 25%;
+  padding-bottom: 1em;
+}
 
 
 
@@ -134,7 +216,13 @@ body {
     display: none;
   }
 }
-
+@media (max-width: 1135px) {
+  .block-driver {
+    margin: 0;
+    width: 100%;
+    
+  }
+}
 
 
 
