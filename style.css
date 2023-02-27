@@ -128,8 +128,8 @@ p {
   background-size:cover;
 }
 .wrapper__driver {
-  width: 80%;
-  flex-basis: 80%;
+  width: 69%;
+  flex-basis: 69%;
 }
 .block-driver {
   display: flex;
@@ -217,7 +217,7 @@ cursor: pointer;
 }
 /*---------------FOCUSED------------------*/
 .focused {
-  width: 80%;
+  width: 69%;
   margin: 2em auto;
   display: flex;
   flex-direction: column;
@@ -300,7 +300,7 @@ cursor: pointer;
 /*---------------NEWSROOM------------------*/
 
 .newsroom {
-  width: 80%;
+  width: 69%;
   margin: 2em auto;
 }
 .newsroom-container {
