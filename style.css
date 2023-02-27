@@ -16,9 +16,10 @@ body {
 .nav-bar {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   background-color: #000;
   justify-content: center;
-  height: 9vh;
+  height: 70px;
   width: 100%;
 }
 
@@ -41,13 +42,15 @@ body {
 }
 .nav__button {
   padding: 10px 15px;
+  margin: auto;
   border-radius: 20px;
   border: 1px solid #fff;
   cursor: pointer;
+  justify-content: flex-start;
 }
 .nav-bar li {
-  display: inline-block;
-  margin: 10px;
+  
+  list-style: none;
   font-size: 13px;
   border: 1px solid #000;
   transition: background-color 0.5s;
@@ -60,20 +63,77 @@ body {
 
 
 .nav-bar__left {
-  flex: 1;
+  display: flex;
   justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
+.nav-bar-list__left {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 0;
+}
+
+
 .nav-bar__right {
-  flex: 1;
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nav-bar-list__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin:;
 }
 
+.products {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-grow: 0;
+}
+.login-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-grow: 0;
+}
+
+/*-------------------------------------------*/
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*---------------MEDIA------------------*/
+@media (max-width: 600px) {
+  .nav-bar-list__left, .products {
+    display: none;
+  }
+}
 
 
 
