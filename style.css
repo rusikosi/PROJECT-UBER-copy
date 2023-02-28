@@ -118,6 +118,7 @@ p {
   width: 100%;
   flex-grow: 0;
   align-items: center;
+  flex: none;
 }
 
 /*-------------------------------------------*/
@@ -351,6 +352,12 @@ cursor: pointer;
 
 
 /*---------------MEDIA------------------*/
+@media (min-width: 300px) and (max-width: 599px) {
+  .app {
+    width: min-content;
+  }
+}
+
 @media (max-width: 600px) {
   .nav-bar-list__left, .products {
     display: none;
