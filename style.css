@@ -347,6 +347,119 @@ cursor: pointer;
   font-size: 14px;
 }
 
+/*---------------FOOTER------------------*/
+
+.footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-wrapper {
+  width: 69%;
+  margin:0 auto; 
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container li {
+  list-style: none;
+}
+.footer-container a {
+ color: #fff;
+ text-decoration: none;
+}
+.footer-container a:hover {
+  color: rgba(173, 171, 171, 0.83);
+}
+.footer-container__apps img {
+  width: 8em;
+}
+.footer-container__logo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.footer-container__links {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  margin: 2.5em 0;
+}
+
+.footer-container__item h3{
+  font-size: 16px;
+  margin-bottom: 1.2em;
+  font-weight: 500;
+}
+.footer-container__item li {
+  font-size: 15px;
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+
+.footer-container__social {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  padding: 1em 0;
+  margin: 1em 0;
+}
+.social-left {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
+}
+.social-right {
+  display: flex;
+}
+.social-right ul{
+  display: flex;
+  gap: 1em;
+}
+
+
+
+.footer-container__apps {
+  display: flex;
+  gap: 1em;
+  padding: 1em 0;
+  margin: 1em 0;
+}
+
+.footer-container__privacy {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  margin-bottom: 3em;
+}
+.footer-container__privacy p {
+  font-size: small;
+  color: rgba(180, 176, 176, 0.646);
+}
+.footer-container__privacy a {
+  font-size: small;
+  color: rgba(180, 176, 176, 0.646);
+}
+.privacy-right {
+  display: flex;
+  gap: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -419,220 +532,3 @@ cursor: pointer;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-----------------------------*/
-
-/*
-.background {
-  background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_820,h_461/v1653688498/assets/2c/3833ca-a2eb-4da4-9879-51193ea88f87/original/DotCom_Update_Earner_bg_med2x.jpg);
-}
-
-section>.hero {
-  display: flex;
-  width: 100%;
-}
-section {
-  
-}
-.wrapper {
-  margin: 5em;
-  height: auto;
-  width: 100%;
-  background-color: #fff;
-}
-.hero {
-  display: flex;
-  width: 70%;
-  height: auto;
-
-  /*margin: 20% 50% 20% 20%;*/
-}
-
-/*.inner-container {
-  display: block;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color:#fff;
-  /*border: 1px solid rgba(161, 157, 157, 0.626);*/
-}
-/******
-.inner-container__header {
-  display: flex;
-  justify-content: space-around;
-}
-.inner-container__header a {
-  text-decoration: none;
-  color: #000;
-  cursor: pointer;
-}
-.inner-container__nav {
-  display: inline-flex;
-  justify-content: space-around;
-  width: 100%;
-  margin: 15px 0 30px 0;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(161, 157, 157, 0.626);
-}
-.inner-container__nav li {
-  display: flexbox;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  align-items:center;
-}
-
-.inner__img {
-  text-align: center;
-}
-
-
-.inner-container__body {
-  display: block;
-}
-.inner-container__body h1 {
-  font-size: 2.5rem;
-  margin: 20px 15px 30px 15px;
-  text-align: left;
-}
-.inner-container__body p {
-  text-align: left;
-  margin: 0px 15px 20px 15px;
-  font-size: 15px;
-}
-.inner-container__footer {
-  display: block;
-  margin: 30px 15px 30px;
-}
-.inner-container__footer button {
-  margin: 0 0 15px 0;
-  padding: 12px 25px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-  font-size: 15px;
-}
-.inner-container__footer a {
-  font-size: 14px;
-  text-decoration: none;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(161, 157, 157, 0.626);
-  color: black;
-  cursor: pointer;
-}
-
-
-
-
-
-.business {
-  background-image: url(https://www.greenbiz.com/sites/default/files/images/articles/featured/shutterstock_142977907.jpg);
-  height: 12em;
-  display: flex;
-}
-
-.container-business {
-  display: flex;
-  align-items:center;
-}
-.content-business h1 {
-  margin: 20px;
-}
-.content-business p {
-  margin: 20px;
-}
-.content-business button {
-  margin: 10px 20px;
-  padding: 12px 25px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  background-color: #000;
-  font-size: 15px;
-}
-.content-business a {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-
-
-
-.focused {
-  width: 100%;
-}
-.container-focused {
-  display: flex;
-  justify-content: space-around;
-  margin: 10px 20px;
-}
-
-
-.apps {
-  width: 100%;
-  background-color:rgba(188, 188, 188, 0.287);
-}
-.container-apps {
-  display: flex;
-  justify-content: space-around;
-}
-
-
-
-
-
-
-
-/*
-.nav-bar__left{
-  display: flex;
-  flex: 1;
-}
-.nav-bar-list__left {
-  display: flex;
-}
-.nav-bar-list__left li {
-  display: inline-block;
-  margin: 10px;
-}
-
-
-.nav-bar__right {
-  display: flex;
-  margin: 15px;
-  flex: 1;
-  justify-content: flex-end;
-}
-.nav-bar-list__right {
-  display: flex;
-  margin: 15px;
-}
-.nav-bar-list__right li {
-  display: inline-block;
-  margin: 10px;
-}
