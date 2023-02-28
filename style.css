@@ -51,6 +51,7 @@ p {
   cursor: pointer;
   justify-content: flex-start;
   text-align: left;
+  
 }
 .nav-bar li {
   
@@ -60,6 +61,7 @@ p {
   transition: background-color 0.5s;
   border-radius: 25px;
   padding: 8px 10px;
+  
 }
 .nav-bar li:hover {
   background-color:rgba(94, 94, 94, 0.588);
@@ -96,7 +98,7 @@ p {
   justify-content: center;
   width: 100%;
   flex-wrap: nowrap;
-  margin:;
+  flex-basis: 100%;
 }
 
 .products {
@@ -105,7 +107,9 @@ p {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
+  flex-basis: 50%;
   flex-grow: 0;
+  align-items: center;
 }
 .login-menu {
   display: flex;
@@ -113,6 +117,7 @@ p {
   flex-wrap: nowrap;
   width: 100%;
   flex-grow: 0;
+  align-items: center;
 }
 
 /*-------------------------------------------*/
@@ -350,12 +355,57 @@ cursor: pointer;
   .nav-bar-list__left, .products {
     display: none;
   }
-}/*
+  .focused {
+    width: 90%;
+  }
+  .focused-container {
+    flex-wrap: wrap;
+  }
+  .focused-block__item {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .newsroom {
+    width: 90%;
+  }
+  .newsroom-block__item {
+    flex-basis: 94%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .focused {
+    width: 90%;
+  }
+  .focused-container {
+    align-items: flex-start;
+  }
+  .focused-block__item {
+    flex-basis: 47%;
+  }
+  .newsroom {
+    width: 90%;
+  }
+  .newsroom-block__item {
+    flex-basis: 49%;
+    margin-bottom: 2em;
+  }
+}
 @media (max-width: 1135px) {
+  .wrapper__driver {
+    width: 100%;
+    flex-basis: 100%;
+  }
   .block-driver {
     margin: 0;
     width: 100%;
+    max-width: none;
     
+  }
+  .driver__header {
+    padding-left: 1.5em;
+  }
+  .driver-nav {
+    width: 40%;
   }
 }
 
